@@ -4,9 +4,9 @@ body {
     color: #333;
     font-size: 14px;
     line-height: 20px;
-  }
-  
-  .html-embed {
+}
+
+.html-embed {
     position: fixed;
     left: 0%;
     top: 0%;
@@ -15,9 +15,9 @@ body {
     z-index: -1;
     width: 100vw;
     height: 100vh;
-  }
-  
-  .page-wrapper {
+}
+
+.page-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -37,9 +37,9 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-  }
-  
-  .stutter-link {
+}
+
+.stutter-link {
     position: relative;
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
@@ -47,9 +47,9 @@ body {
     font-size: 6vw;
     line-height: 1.1;
     text-decoration: none;
-  }
-  
-  .flex-wrapper {
+}
+
+.flex-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -68,30 +68,121 @@ body {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-  }
-  
-  .stutter-item {
+}
+
+.stutter-item {
     width: 100%;
     padding-top: 0.2em;
     border-bottom: 2px solid hsla(0, 0%, 100%, 0.4);
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-  }
-  
-  .stutter-image {
+}
+
+.stutter-image {
     position: absolute;
     z-index: 2;
     display: none;
     height: 35vh;
-  }
-  
-  .body {
+}
+
+.body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  @media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 1024px) {
     .stutter-link {
-      font-size: 10vw;
+        font-size: 10vw;
     }
-  }
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url("images/clint-patterson-dYEuFB8KQJk-unsplash.jpg");
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.bgimg-2 {
+    background-image: url("images/627a68daecda295c164145b4_cash-WaqUiN17rf0-unsplash.jpg");
+    width: 100vw;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.bgimg-3 {
+    background-image: url("images/premium_photo-1681822480992-0ca5f92a7df4.jpg");
+    min-height: 300px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: transparent;
+    color: white;
+    padding: 18px;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: white;
+}
+
+.about {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    display: flex;
+    max-width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.about-left, .about-right{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 30px;
+}
+.contact {
+    text-align: center;
+}
+
+.icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    background-color: white;
+    margin: 20px;
+}
+.link {
+    display: inline-block;
+}

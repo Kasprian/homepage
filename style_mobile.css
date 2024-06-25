@@ -16,6 +16,9 @@ h2{
 p{
     text-align: justify;
 }
+.center-text{
+    text-align: center;
+}
 
 .page-wrapper {
     width: 100%;
